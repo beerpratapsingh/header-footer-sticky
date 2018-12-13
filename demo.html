@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo HTML</title>
+	<style type="text/css">
+		html, body{height: 100%}
+		body{min-height: 100%; margin: 0; padding: 0;}
+		.wrap{min-height: calc(100% - 78px); background-color: #efefef;}
+		.header{height: 60px; background-color: red;}
+
+		.item-container{display: flex; padding: 18px; justify-content: space-between;}
+		.item{width: 30%; /*flex: 1;*/ color: #fff; background-color: #0081cb; padding: 15px;}
+		.item:nth-child(2){background-color: #8881cb;}
+		.item:nth-child(3){background-color: #5581cb;}
+		.footer{background-color: green}
+	</style>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvasDemo");
+			var ctx = canvas.getContext("2d");
+			ctx.fillRect(25, 25, 100, 100);
+			ctx.clearRect(45, 45, 60, 60);
+    		ctx.strokeRect(50, 50, 50, 50);
+	</script>
+</head>
+<body>
+	<div class="header">Header</div>
+	<div class="wrap">	
+		<div class="item-container">
+			<div class="item">Important : Refer to your RC and current policy copy to provide accurate data as that will ensure easier claim settlement process. Important : Refer to your RC and current policy copy to provide accurate data as that will ensure easier claim settlement process.</div>
+			<div class="item">Important : Refer to your RC and current policy copy to provide accurate data as that will ensure easier claim settlement process.</div>
+			<div class="item">Important : Refer to your RC and current policy copy to provide accurate data as that will ensure easier claim settlement process.</div>
+		</div>
+
+		<div class="item-container">
+			<!-- <canvas id="canvasDemo" width="200" height="200" style="border:1px solid #d3d3d3;">
+			Your browser does not support the HTML5 canvas tag.</canvas> -->			
+			<canvas id="canvasDemo" width="150" height="150"></canvas>
+		</div>
+
+	</div>
+	<div class="footer">Footer</div>
+</body>
+</html>
